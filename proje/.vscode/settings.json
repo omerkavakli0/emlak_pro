@@ -1,0 +1,19 @@
+{
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "mySQL_projeDB",
+            "database": "emlakDB",
+            "username": "root",
+            "password": "Mysql@123"
+        }
+    ],
+    "java.configuration.updateBuildConfiguration": "interactive"
+}

@@ -1,0 +1,19 @@
+.dark-background{
+    -fx-background-color: #222222;
+}
+
+.border-bottom{
+    -fx-border-width: 0 0 2 0;
+    -fx-border-color: #676767;
+}
+
+.bottom{
+    -fx-background-radius: 50;
+}
+
+.gradient{
+    -fx-background-color: linear-gradient(to top, #222222, transparent);
+}
+.shadow{
+    -fx-effect: dropShadow(three-pass-box, rgba(0,0,0,0.2),10,0,0,10);
+}
