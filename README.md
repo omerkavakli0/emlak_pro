@@ -1,1 +1,0 @@
-# emlak_pro

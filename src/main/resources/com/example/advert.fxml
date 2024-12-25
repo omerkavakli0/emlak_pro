@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="340.0" minWidth="355.0" prefHeight="350.0" prefWidth="464.0" styleClass="dark-background" stylesheets="@css/styles.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.AdvertController">
+   <children>
+      <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="350.0" minWidth="356.0" prefHeight="350.0" prefWidth="459.0" spacing="10.0" styleClass="shadow" stylesheets="@css/styles.css">
+         <children>
+            <HBox prefHeight="350.0" prefWidth="505.0">
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0" spacing="30.0">
+                           <children>
+                              <Button fx:id="btnFav" mnemonicParsing="false" onAction="#addFav" styleClass="bottom" stylesheets="@css/styles.css" text="Fav" textFill="#676767">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="btnchs" mnemonicParsing="false" onAction="#choose" styleClass="bottom" stylesheets="@css/styles.css" text="Choose" textFill="#676767">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                        <ImageView fx:id="img" fitHeight="187.0" fitWidth="315.0" pickOnBounds="true" preserveRatio="true" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="229.0" prefWidth="150.0" spacing="10.0">
+                     <children>
+                        <ImageView fitHeight="100.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../imgs/user_formal.png" />
+                           </image></ImageView>
+                        <Label fx:id="lblPubName" text="name surname" textFill="#676767" />
+                        <Label fx:id="lblPubTel" text="telephone" textFill="#676767" />
+                        <Label fx:id="lblPubMail" text="mail" textFill="#676767" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <VBox prefHeight="91.0" prefWidth="373.0" spacing="5.0">
+               <children>
+                  <HBox prefHeight="30.0" spacing="10.0">
+                     <children>
+                        <Label fx:id="lblCity" text="City" textFill="#b5b5b5">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblDistrict" text="District" textFill="#b5b5b5">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblStreet" text="Street" textFill="#b5b5b5">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </HBox>
+                  <HBox spacing="15.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="30.0" spacing="5.0">
+                           <children>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+                              <Label fx:id="lblCategory" text="categpry" textFill="#676767" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="30.0" spacing="5.0">
+                           <children>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+                              <Label fx:id="lblRoom" text="3+1" textFill="#676767" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="30.0" spacing="5.0">
+                           <children>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+                              <Label fx:id="lblM2" text="M2" textFill="#676767" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="30.0" />
+                        <HBox alignment="CENTER" prefHeight="30.0" spacing="5.0">
+                           <children>
+                              <Label fx:id="lblDate" text="Date" textFill="#676767" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label fx:id="lblPrice" text="Price" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets right="20.0" />
+                     </padding>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </VBox>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="5.0" right="5.0" top="10.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>

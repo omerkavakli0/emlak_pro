@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.UpdateAdvertController">
+    <center>
+        <VBox alignment="TOP_CENTER" spacing="20.0" BorderPane.alignment="CENTER">
+            <children>
+                <Label text="Update Advert">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Label>
+
+                <HBox alignment="CENTER" spacing="15.0">
+                    <children>
+                        <VBox spacing="10.0">
+                            <children>
+                                <Label text="Category:" />
+                                <ComboBox fx:id="comboCategory" prefWidth="300.0" />
+                            </children>
+                        </VBox>
+                        <VBox spacing="10.0">
+                            <children>
+                                <Label text="State:" />
+                                <ComboBox fx:id="comboState" prefWidth="300.0" />
+                            </children>
+                        </VBox>
+                    </children>
+                </HBox>
+
+                <HBox alignment="CENTER" spacing="15.0">
+                    <children>
+                        <VBox spacing="10.0">
+                            <children>
+                                <Label text="Room Count:" />
+                                <ComboBox fx:id="comboRoomCount" prefWidth="300.0" />
+                            </children>
+                        </VBox>
+                        <VBox spacing="10.0">
+                            <children>
+                                <Label text="Age:" />
+                                <ComboBox fx:id="comboAge" prefWidth="300.0" />
+                            </children>
+                        </VBox>
+                    </children>
+                </HBox>
+
+                <HBox alignment="CENTER" spacing="15.0">
+                    <children>
+                        <VBox spacing="10.0">
+                            <children>
+                                <Label text="Square Meters (m²):" />
+                                <TextField fx:id="txtSquareMeters" prefWidth="300.0" />
+                            </children>
+                        </VBox>
+                        <VBox spacing="10.0">
+                            <children>
+                                <Label text="Price:" />
+                                <TextField fx:id="txtPrice" prefWidth="300.0" />
+                            </children>
+                        </VBox>
+                    </children>
+                </HBox>
+
+                <HBox alignment="CENTER" spacing="15.0">
+                    <children>
+                        <VBox spacing="10.0">
+                            <children>
+                                <Label text="City:" />
+                                <TextField fx:id="txtCity" prefWidth="300.0" />
+                            </children>
+                        </VBox>
+                        <VBox spacing="10.0">
+                            <children>
+                                <Label text="District:" />
+                                <TextField fx:id="txtDistrict" prefWidth="300.0" />
+                            </children>
+                        </VBox>
+                        <VBox spacing="10.0">
+                            <children>
+                                <Label text="Street:" />
+                                <TextField fx:id="txtStreet" prefWidth="300.0" />
+                            </children>
+                        </VBox>
+                    </children>
+                </HBox>
+
+                <VBox spacing="10.0" />
+
+                <VBox spacing="10.0">
+                    <children>
+                        <Label text="Choose an Image" />
+                        <Button fx:id="btnImage" mnemonicParsing="false" onAction="#updateImage" text="Upload Image" />
+                        <ImageView fx:id="imgImage" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                    </children>
+                </VBox>
+
+                <Button fx:id="btnSave" mnemonicParsing="false" onAction="#updateAdvert" prefWidth="200.0" text="Save Changes" />
+            </children>
+            <padding>
+                <Insets top="20.0" />
+            </padding>
+        </VBox>
+    </center>
+</BorderPane>
